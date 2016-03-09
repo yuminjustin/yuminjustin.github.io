@@ -1,0 +1,30 @@
+{
+	"name": "article",
+	"data": {
+		"title": "阻止系统弹出软键盘的方法",
+		"thumbnails": "/resource/img/uploads/20150104113640497.png",
+		"description": "在移动开发当中，常常会遇到使用控件输入的时候，虽然HTML5提供了大量的日历、事件、数字的系统级输入控件，但是由于android的碎片化和浏览器市场的分化，风格迥异，往往不能满足开发，特别是微信，巨丑无比！",
+		"keywords": "移动,软键盘,js",
+		"updateTime": "2015-01-04 11:24:22",
+		"resource": "",
+		"resourceUrl": "",
+		"body": [
+			"在移动开发当中，常常会遇到使用控件输入的时候，虽然HTML5提供了大量的日历、事件、数字的系统级输入控件，但是由于android的碎片化和浏览器市场的分化，风格迥异，往往不能满足开发，特别是微信，巨丑无比！",
+			["&lt;input type='date'/&gt"],
+			"上面这串代码在微信里是惨不忍睹，现在又有很多网站需要借助微信的平台，就不得不使用一些控件，我之前也是用别人做好的控件。可是我是个喜欢DIY的人，就着手自己写了一个控件，也放在在了Github和本站上，现在还是最初版，功能还不完善（现在手上还有工作等不忙的时候再来完善），遇到了一点input元素就弹出系统输入法，感觉界面立马就尴尬。于是就度娘了一下，又在群里问了问。",
+			"<img src='/resource/img/uploads/20150104113640497.png' class='arcImg'/>",
+			"如图得到了解答，真不错，果然实现了预期的效果",
+			[
+			  "&lt;input type='text' id='text' autocomplete='off' /&gt",
+			  "&lt;script&gt",
+			  "    var t = document.getElementById('text');",
+			  "    t.addEventListener('click', keyborded, false);",
+			  "    var keyborded = function () {",
+			  "        this.blur();  /*软件盘不再弹出*/",
+			  "    }",
+			  "&lt;/script&gt"
+			],
+			"点击之后，立马触发去焦。"
+		]
+	}
+}

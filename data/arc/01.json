@@ -1,0 +1,59 @@
+{
+	"name": "article",
+	"data": {
+		"title": "基于jQuery或Zepto的touch事件 ",
+		"thumbnails": "/upload/20150919/touch.jpg",
+		"description": "触摸插件，基于jQuery or Zepto，为移动开发提供最基本的事件, tap、longTap、swipeUp、swipeDown、swipeLeft、swipeRight、swipe、drag几个常规的事件，今后版本将添加双指缩放事件",
+		"keywords": "jQuery,Zepto,touch",
+		"updateTime": "2015-01-03 13:22:06",
+		"resource": "",
+		"resourceUrl": "",
+		"body": [
+			"触摸插件，基于jQuery or Zepto，为移动开发提供最基本的事件",
+			"版本：1.1",
+			"内含demo，下载后可查看效果",
+			"tap、longTap、swipeUp、swipeDown、swipeLeft、swipeRight、swipe、drag几个常规的事件，今后版本将添加双指缩放事件",
+			[
+			  "$(document).ready(function () { /*放在head的时候要加*/",
+			  "    $(this).tap(function (event) {",
+			  "       $('#xx').text('tap');",
+			  "    });",
+			  "    $(this).longTap(function (event) {",
+			  "       $('#xx').text('longtap');",
+			  "    });",
+			  "    $(this).swipeUp(function (event) {",
+			  "       $('#xx').text('swipeUp');",
+			  "    }, {",
+			  "       x: 50,",
+			  "       /*修改最短的触摸识别距离，x是横向，也是纵向*/",
+			  "       y: 50",
+			  "    });",
+			  "    $(this).swipe(function (event) {",
+			  "       $('#xx').text('swipe');",
+			  "    });",
+			  "    $(this).swipeDown(function (event) {",
+			  "       $('#xx').text('swipeDown');",
+			  "    });",
+			  "    $(this).swipeLeft(function (event) {",
+			  "       $('#xx').text('swipeLeft');",
+			  "    });",
+			  "    $(this).swipeRight(function (event) {",
+			  "       $('#xx').text('swipeRight');",
+			  "    });",
+			  "});"
+			],
+			"拖拽事件:",
+			[
+			    "$('.slider').drag(function (event, p) {",
+				"    console.log(p.x, p.y, p.xs, p.ys);",
+				"    /*",
+				"    p.x,p.y: 当前实时的x，y轴信息",
+				"    p.xs,p.ys: 开始触摸时的x，y轴信息",
+				"    */",
+				"});"
+			],
+			"下载：<a href='https://github.com/yuminjustin/touch' target='_blank'>GO</a>",
+            "插件推荐: <a href='https://github.com/chinatjnet/zTouch' target='_blank'>zTouch</a>"
+		]
+	}
+}

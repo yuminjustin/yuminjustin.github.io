@@ -1,0 +1,40 @@
+{
+	"name": "article",
+	"data": {
+		"title": "基于jQuery或Zepto的orientation事件 ",
+		"thumbnails": "/upload/20150919/3586630.png",
+		"description": "这个插件基于JQuery or Zepto，提供移动设备的方向的事件。 一共提供四个事件：vertical、hLeft、hRight、shake，分别代表了：手机竖屏、手机横向（logo在左）、手机横向（logo在右）、手机摇晃",
+		"keywords": "jQuery,Zepto,orientation",
+		"updateTime": "2015-01-03 14:07:20",
+		"resource": "",
+		"resourceUrl": "",
+		"body": [
+			"这个插件基于JQuery or Zepto，提供移动设备的方向的事件。",
+			"一共提供四个事件：vertical、hLeft、hRight、shake",
+			"分别代表了：手机竖屏、手机横向（logo在左）、手机横向（logo在右）、手机摇晃",
+			"使用方式：",
+			[
+			  " $(document).ready(function () {/*当插件放置在head中 必须在ready当中*/",
+			  "    $(this).vertical(function (event) {",
+			  "       $(\"#c\").text(event.type);",
+			  "    });",
+			  "    $(this).hLeft(function (event) {",
+			  "       $(\"#c\").text(event.type);",
+			  "    });",
+			  "    $(this).hRight(function (event) {",
+			  "       $(\"#c\").text(event.type);",
+			  "    });",
+			  "    $(this).shake(function (event) {",
+			  "       $(\"#c\").text(event.type)",
+			  "    });",
+			  "});"
+			],
+			"例子：（使用手机扫一扫查看）",
+			"输出当前事件",
+			{
+			   "qrcode":"http://htmlpreview.github.io/?https://github.com/yuminjustin/orientation/blob/master/index.html"
+			},
+			"下载：<a href='https://github.com/yuminjustin/orientation' target='_blank'>去Github下载</a>"
+		]
+	}
+}

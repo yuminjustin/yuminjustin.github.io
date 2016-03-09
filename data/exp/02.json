@@ -1,0 +1,26 @@
+{
+	"name": "article",
+	"data": {
+		"title": "两款好用的hover插件推荐",
+		"thumbnails": "/resource/img/uploads/20150111040100368.png",
+		"description": "推荐一：Hover.css。此css的库包括含了链接、按钮、logo、svg、图标类型的hover效果，而且还提供css、sass和less的源码。部分功能的截图：（包含的效果都还蛮实用的）",
+		"keywords": "css,hover",
+		"updateTime": "2015-01-11 15:34:24",
+		"resource": "",
+		"resourceUrl": "",
+		"body": [
+			"推荐一：<a href='http://ianlunn.github.io/Hover/' target='_blank'>Hover.css</a>",
+			"此css的库包括含了链接、按钮、logo、svg、图标类型的hover效果，而且还提供css、sass和less的源码",
+			"部分功能的截图：（包含的效果都还蛮实用的）",
+			"<img src='/resource/img/uploads/20150111040100368.png' class='arcImg'/>",
+			"<img src='/resource/img/uploads/20150111040318270.png' class='arcImg'/>",
+			"<img src='/resource/img/uploads/20150111040356187.png' class='arcImg'/>",
+			"推荐二：<a href='http://gudh.github.io/ihover/dist/index.html' target='_blank'>iHover</a>",
+			"此css的库使用纯CSS3开发，能提供惊艳的hover动画，也可配合bootstrap使用，我后期将会将主页和列表页添加这些效果，哈哈",
+			"部分功能的截图（很多动画截图看不到效果，选了几个对比明显的）:",
+			"<img src='/resource/img/uploads/20150111041333530.png' class='arcImg'/>",
+			"<img src='/resource/img/uploads/20150111041512403.png' class='arcImg'/>",
+			"<img src='/resource/img/uploads/20150111041435471.png' class='arcImg'/>"
+		]
+	}
+}

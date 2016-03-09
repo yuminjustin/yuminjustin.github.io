@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
-	<title>yuminjustin.github.io by yuminjustin</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="width=640,user-scalable=no" name="viewport" id="viewport" />
+	<title>Yuminjustin for GitHub</title>
+	<link rel="stylesheet" href="./resource/style/style.css">
+	<script src="./module/lib/require.min.js"></script>
+	<script src="./module/config.js"></script>
 </head>
 
 <body>
-	<img src="/resource/img/logo.png" alt="">
-	<br/>
-	<p>comming soon...</p>
+	<div class="leftbar l oh px">
+		<ul id="js-menu">
+		</ul>
+	</div>
+	<div id="article-head" class="px none animated fadeInLeft">
+		<div class="l">
+			<a href="?/" title="返回"><i class="icon iconfont">&#xe640;</i></a>
+		</div>
+		<div class="ab-title-info r">
+		</div>
+	</div>
+	<div class="rightbar l px" id="container">
+	</div>
+	<script>
+		require(["app"]);
+	</script>
 </body>
 
 </html>
