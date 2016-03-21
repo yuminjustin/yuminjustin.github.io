@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=1200" name="viewport" id="viewport" />
+	<meta name="keywords" content="前端开发">
+	<meta name="description" content="一个前端开发者的DIY">
+	<title>yuminjustin的折腾</title>
+	<link href="favicon.ico" type="image/x-icon" rel=icon/>
+	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<link rel="stylesheet" href="/resource/style/style.css">
+</head>
+
+<body>
+	<div class="leftbar l oh px">
+		<ul>
+			<li class="logo">
+				<a href="/" title="返回首页">
+					<img src="/resource/img/logo.png" alt="返回首页" class="db m">
+				</a>
+			</li>
+			<li class="channel active">
+				<a href="#">all</a>
+			</li>
+			<li class="channel">
+				<a href="#">about</a>
+			</li>
+		</ul>
+	</div>
+	<div id="article-head" class="px">
+		<div class="l">
+			<a href="/" title="返回"><i class="icon iconfont">&#xe640;</i></a>
+		</div>
+		<div class="ab-title-info r">
+			<p class="ab-title">takePic H5图片上传及翻转</p>
+			<span class="db">2015-04-20 14:50:22</span>
+		</div>
+	</div>
+	<div class="rightbar l px">
+		<div class="m c article-body oa" id="article-body">
+			<div class="m">
+				<div id="article-part">
+					<div class="c ab-p ab-p-first">这是一个拍照或者选择图片上传的插件，它会自动判断照片拍摄的设备方向并自动旋转；</div>
+					<div class="c ab-p">IE10以下自动绕道（不支持,需要HTML5的特性）；</div>
+					<div class="c ab-p">若你的有浏览器不支持ArrayBuffer，此插件也不适用；</div>
+					<div class="c ab-p">之前分享过这种功能的解决方案<a href="http://yuminjustintest.com/page.html?article-experience-201509-e08" target="_self">点击访问</a></div>
+					<div class="c ab-p">处理需要加载的js有：上传插件、jQuery、jQuery.Exif、配置js；</div>
+					<div class="c ab-p">至少需要这么多，总共有160k</div>
+					<div class="c ab-p">自己也觉得今后会常用到此功能于是乎就自己写一个吧。</div>
+					<div class="c ab-p"><b>使用详情</b></div>
+					<div class="c ab-p">
+						<p class="arcPara">1、依赖jfaver（3.67k）</p>
+					</div>
+					<div class="c ab-p"><pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><span class="pun">（依赖</span><span class="pln">concat</span><span class="pun">和</span><span class="pln">transitionend</span><span class="pun">，有兴趣的可以替换成自己的，让它可以独立）</span><span class="pln"> </span></li></ol></pre></div>
+					<div class="c ab-p">
+						<p class="arcPara">2、配置</p>
+					</div>
+					<div class="c ab-p"><pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><span class="kwd">var</span><span class="pln"> t </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> takePic</span><span class="pun">({</span><span class="pln"> </span></li><li class="L1"><span class="pln">  obj</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{},</span><span class="pln">   </span><span class="com">/*dom 对象*/</span><span class="pln"> </span></li><li class="L2"><span class="pln">  uploadURL</span><span class="pun">:</span><span class="pln"> </span><span class="str">""</span><span class="pun">,</span><span class="pln">    </span><span class="com">/*上传地址*/</span><span class="pln"> </span></li><li class="L3"><span class="pln">  type</span><span class="pun">:</span><span class="str">"image/jpg,image/jpeg,image/png,image/gif"</span><span class="pun">,</span><span class="pln">    </span><span class="com">/*支持格式*/</span><span class="pln"> </span></li><li class="L4"><span class="pln">  maxSize</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1024</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="lit">1024</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="lit">8</span><span class="pun">,</span><span class="pln">    </span><span class="com">/*最大字节*/</span><span class="pln"> </span></li><li class="L5"><span class="pln">  multiple</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">    </span><span class="com">/*是否多文件*/</span><span class="pln"> </span></li><li class="L6"><span class="pln">  zoomWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1024</span><span class="pun">,</span><span class="pln">    </span><span class="com">/*缩放宽度 px*/</span><span class="pln"> </span></li><li class="L7"><span class="pln">  quality</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.8</span><span class="pun">,</span><span class="pln">    </span><span class="com">/*缩放质量 0.0~1.0*/</span><span class="pln"> </span></li><li class="L8"><span class="pln">  onProgress</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{},</span><span class="pln">    </span><span class="com">/*进度条事件*/</span><span class="pln"> </span></li><li class="L9"><span class="pln">  onSuccess</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{},</span><span class="pln">    </span><span class="com">/*上传成功*/</span><span class="pln"> </span></li><li class="L0"><span class="pln">  onFailure</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{},</span><span class="pln">    </span><span class="com">/*上传失败*/</span><span class="pln"> </span></li><li class="L1"><span class="pln">  onSelect</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{},</span><span class="pln">    </span><span class="com">/*文件选择事件*/</span><span class="pln"> </span></li><li class="L2"><span class="pln">  fileContainer</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">    </span><span class="com">/*文件集合 多文件*/</span><span class="pln"> </span></li><li class="L3"><span class="pln">    length</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span></li><li class="L4"><span class="pln">    index</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span></li><li class="L5"><span class="pln">    fileLists</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{}</span><span class="pln"> </span></li><li class="L6"><span class="pln">  </span><span class="pun">},</span><span class="pln"> </span></li><li class="L7"><span class="com">/*文件上传使用的变量名，主要用于后端*/</span><span class="pln"> </span></li><li class="L8"><span class="pln">  variableName</span><span class="pun">:</span><span class="pln"> </span><span class="str">'takePic'</span><span class="pln"> </span></li><li class="L9"><span class="pun">});</span><span class="pln"> </span></li></ol></pre></div>
+					<div class="c ab-p">
+						<p class="arcPara">注意事项：</p>
+					</div>
+					<div class="c ab-p"><pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><span class="pln">obj </span><span class="pun">必须是对象</span><span class="pln"> </span><span class="pun">例如：</span><span class="pln">document</span><span class="pun">.</span><span class="pln">querySelector</span><span class="pun">(</span><span class="str">"#test"</span><span class="pun">)</span><span class="pln"> </span><span class="pun">或者</span><span class="pln"> document</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">(</span><span class="str">"test"</span><span class="pun">)</span><span class="pln"> </span></li><li class="L1"><span class="pun">【此</span><span class="pln">dom</span><span class="pun">非</span><span class="pln">input</span><span class="pun">对象！而是他的父级，插件会动态插入一个</span><span class="pln">input</span><span class="pun">，插入的</span><span class="pln">input</span><span class="pun">无样式需要自己定义】</span><span class="pln"> </span></li><li class="L2"><span class="pln">type </span><span class="pun">【</span><span class="pln">image</span><span class="pun">/】</span><span class="pln"> </span><span class="pun">这个前缀要写，我也太懒了，下个版本在简化它</span><span class="pln"> </span></li><li class="L3"><span class="pln">multiple  </span><span class="pun">布尔型，</span><span class="lit">1</span><span class="pun">或</span><span class="kwd">true</span><span class="pun">开启多图上传（限</span><span class="pln">PC</span><span class="pun">端）</span><span class="pln"> </span></li><li class="L4"><span class="pln">zoomWidth </span><span class="pun">缩放的宽度，竖行（宽&lt;高）的图片，会小于这个值：（原始高*</span><span class="pln">zoomWidth</span><span class="pun">/原始宽度）*</span><span class="lit">1.4</span><span class="pln">  </span></li><li class="L5"><span class="pln">quality </span><span class="pun">照片质量（</span><span class="lit">0</span><span class="pun">~</span><span class="lit">1.0</span><span class="pun">）浮点型</span><span class="pln"> </span></li><li class="L6"><span class="pln">onProgress</span><span class="pun">，</span><span class="pln">onSuccess</span><span class="pun">，</span><span class="pln">onFailure</span><span class="pun">，</span><span class="pln">onSelect </span><span class="pun">对应的事件</span><span class="pln"> </span></li><li class="L7"><span class="pln">fileContainer </span><span class="pun">这个无需配置</span><span class="pln"> </span><span class="pun">请保持原始结构</span><span class="pln"> </span><span class="pun">用于多图上传</span><span class="pln"> </span></li><li class="L8"><span class="pln">variableName </span><span class="pun">文件上传使用的变量名，主要用于后端</span><span class="pln"> </span></li></ol></pre></div>
+					<div class="c ab-p">
+						<p class="arcPara">3、方法</p>
+					</div>
+					<div class="c ab-p"><pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><span class="pln">t</span><span class="pun">.</span><span class="pln">error</span><span class="pun">(</span><span class="typ">String</span><span class="pun">);</span><span class="pln"> </span><span class="pun">错误弹出层</span><span class="pln"> </span></li><li class="L1"><span class="pln">t</span><span class="pun">.</span><span class="pln">succ</span><span class="pun">(</span><span class="typ">String</span><span class="pun">);</span><span class="pln"> </span><span class="pun">成功弹出层</span><span class="pln"> </span></li></ol></pre></div>
+					<div class="c ab-p">
+						<p class="arcPara">ios、android、pc测试通过，使用机器iPhone 5s、SONY z1；</p>
+					</div>
+					<div class="c ab-p">下载：<a href="https://github.com/yuminjustin/takePic" target="_blank">去Github下载</a></div>
+					<iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
