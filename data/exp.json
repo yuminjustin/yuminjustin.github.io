@@ -3,10 +3,10 @@
 		"total": "36",
 		"list": [{
 			"img": "http://pic.weifengke.com/attachments/2/2480/6292de03a31340b77b801283720e756a.jpg",
-			"title": "Todo for Mithril&React",
+			"title": "Todos",
 			"tid": "10",
 			"type":"collection",
-			"description": "基于Mithril和React做的todo示例"
+			"description": "基于Mithril、React、Angular做的todo实例"
 		},{
 			"img": "http://img.25pp.com/uploadfile/soft/images/2011/1021/20111021032149279.jpg",
 			"title": "JS中的call()和apply()方法",
