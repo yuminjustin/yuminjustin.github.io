@@ -7,7 +7,7 @@
 			"示例图：",
 			"<img src='/resource/img/uploads/20160321.jpg' class='arcImg'>",
 			"<b>1、Todo-for-mithril</b>",
-			"基于mithril 和 requirejs；",
+			"基于mithril 和 requirejs；（本站也是基于这个制作的）",
 			"之前学过一段时间的angular，只学了点皮毛；换了家公司，公司用的是backbone，太麻烦，代码量非常大。backbone也是轻量级的，但是它更像是在管理代码，而非真正去实现mvc，不过它对于新手来说是个非常好的启蒙框架。",
             "mithril是一个非常轻巧的mvc框架（个人比较喜欢），也采用了Virtual Dom，页面渲染非常快；",
 			"查看代码：<a href='https://github.com/yuminjustin/Todo-for-mithril' target='_blank'>Go！</a>",
