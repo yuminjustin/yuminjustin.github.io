@@ -45,7 +45,6 @@ body {
 	color: #fff;
 }
 .rightbar {
-	width: calc(100% - 128px);
 	height: 100%;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -53,26 +52,24 @@ body {
 	left: 128px;
 }
 .acrlist {
-	padding: 20px 0;
-	width: 96%;
 }
-.collection {
+.acrlist li:nth-of-type(odd) .collection,.acrlist li:nth-of-type(even) .creation{
 	background: #22b1f1!important;
 	color: #fff!important;
 }
-.creation {
+.acrlist li:nth-of-type(odd) .creation,.acrlist li:nth-of-type(even) .collection{
 	background: #4CC1AB!important;
 	color: #fff!important;
 }
 .article-body {}
 .acrlist li {
 	height: 220px;
-	margin: 20px;
 	overflow: hidden;
 	position: relative;
 	border-radius: 2px;
 	cursor: pointer;
 	background: #dedede;
+	margin: 2px;
 }
 .acrlist li img {
 	width: 100%;

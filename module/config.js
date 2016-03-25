@@ -24,9 +24,9 @@ requirejs.config({
 
 window.APP = {
 	ACTION: { /*接口*/
-		menu: "/data/menu.json",
-		list: "/data/list.json",
-		exp: "/data/exp.json",
-		arc: "/data/"
+		menu: "./data/menu.json",
+		list: "./data/list.json",
+		exp: "./data/exp.json",
+		arc: "./data/"
 	}
 };
