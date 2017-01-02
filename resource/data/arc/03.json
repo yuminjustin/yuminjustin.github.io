@@ -1,0 +1,56 @@
+{
+	"name": "article",
+	"data": {
+		"title": "手机浏览器奇葩问题（一）",
+		"thumbnails": "/upload/20150913/20150113120509217.jpg",
+		"description": "今天公司的老项目遗留问题交给了我这个新来的，呵呵呵，鸭梨山大啊，看看下图,下面的控制图标在这种巨屏手机上显得巨小，罪魁祸首来自nubia的手机，%>_<%，后来公司同事的小米4也是这种现象...",
+		"keywords": "手机,奇葩",
+		"updateTime": "2015-01-13 12:59:02",
+		"resource": "",
+		"resourceUrl": "",
+		"body": [
+			"今天公司的老项目遗留问题交给了我这个新来的，呵呵呵，鸭梨山大啊，看看下图",
+			"<img src='/uploads/20150113120509217.jpg' class='arcImg'/>",
+			"下面的控制图标在这种巨屏手机上显得巨小，罪魁祸首来自nubia的手机，%>_<%，后来公司同事的小米4也是这种现象",
+			"<img src='/uploads/20150113011039471.jpg' class='arcImg'/>",
+			"这是偶的手机显示效果，多么的正常啊",
+			"<img src='/uploads/20150113124515971.jpg' class='arcImg'/>",
+			"我首先想到的应该是 meta name='viewport' 这个里面的原因，就把之前二哥的代码搞过来测试",
+			[
+			  "if( (navigator.userAgent.indexOf('iPhone') != -1) || (navigator.userAgent.indexOf('iPod') != -1) || (navigator.userAgent.indexOf('iPad') != -1)) {",
+			  "  document.write('&lt;meta content=\"width=640, user-scalable=no\" name=\"viewport\" /&gt');",
+			  "}",
+			  "else{ document.write('&lt;meta content=\"width=640, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi\" name=\"viewport\" /&gt');",
+			  "}"
+			],
+			"但是。。。无效，好烦啊，怎么回事啊，不禁心中诅咒，尼玛这些个奇葩机，为什么就不能随大流咧！",
+			"后来又尝试了测试屏幕的宽度和高度比，但是这个方法也没用，没有一个准确的度",
+			[
+			  "window.innerWidth/window.innerHeight"
+			],
+			"使用chrome的开发者模式，只有当你把设备换成Motorola Droid Razr HD的时候才能还原出那个大屏手机的效果",
+			"<img src='/uploads/20150113010117911.jpg' class='arcImg'/>",
+			"于是就用window.devicePixelRatio来判断，我的手机这个值是3，iphone4是最基础的视网膜屏幕这个值是2，现在的市面上的手机有 1~1.5：普通屏幕，2：视网膜屏，3：不用讲啦1080P以上的屏幕，于是使用了下面这段代码。",
+			[
+			  "if(window.devicePixelRatio==1)",
+			  "document.write('&lt;meta content=\"width=480, initial-scale=2.0, maximum-scale=2.0, minimum-scale=2.0, user-scalable=no, target-densitydpi=device-dpi\" name=\"viewport\" /&gt');"
+			],
+			"将显示比例设置为两倍，电脑上的模拟器显示ok！很高兴，于是用小米4测试一下，结果。。。因为小米4的window.devicePixelRatio是3 ，上述代码就无效了，怎么办啊！！！该死的奇葩机。",
+			"想到以前判断设备使用的navigator.userAgent，于是就写了段代码去看看弹出是神马内容。",
+			[
+			  "alert(navigator.userAgent);"
+			],
+			"<img src='/uploads/20150113011721702.jpg' class='arcImg'/>",
+			"我的手机弹出来的是上图信息，乍一看没啥区别，又用小米4，华为，红米2三款手机看了看结果，发现了一个不一样的地方，就是我用红色框框起来的地方，我的手机（索尼z1）、华为、红米2都有这个红色框的值：【U;】，小米4木有，于是使用这个差异来做文章。",
+			[
+			  "var widthInfo = 'device-width';",
+			  "function mobileTest() {",
+			  "  return navigator.userAgent.indexOf('U;') > -1;",
+			  "}",
+			  "if (!mobileTest()) widthInfo = 420;",
+			  "document.write('&lt;meta name=\"viewport\" content=\"width=' + widthInfo + ', initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi\" /&gt')"
+			],
+			"哈哈，得到了理想的效果，把这种奇葩的问题解决了，把设备宽度设为420最佳，设置成320却无效，【U;】这个值应该是表明linux的一些区别，我认为照成这种奇葩问题的出现正是来自像小米这样拥有自己开发rom的厂商，可偏偏红米2又是个例外，也许是因为低端机没有太多的深层的改造，保留了原生android的特点。不管怎么样这个值确实是解决了我的问题，算是一个解决方案了。"
+		]
+	}
+}
