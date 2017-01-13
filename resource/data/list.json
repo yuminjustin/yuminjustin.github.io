@@ -114,7 +114,7 @@
 			"title": "Todos",
 			"tid": "19",
 			"type": "collection",
-			"description": "基于Mithril、React、Angular做的todo实例"
+			"description": "基于Mithril、React、Angular、Redux、Vue做的todo实例"
 		}]
 	},
 	"info": "success",
