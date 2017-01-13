@@ -9,6 +9,7 @@
 		"resource": "",
 		"resourceUrl": "",
 		"body": [
+			"<b>停止维护，平时也拿来做参考，下边的后三个方法一般用underscore和lodash，它们要强大得多</b>",
 			"把自己常用的一些方法和经验集合起来，自己做了一个小的库，于是起名做：jfaver，j是我英文名的首字母，faver喜爱，整个的意思是我喜欢用的方法。本次不提供源码了，因为也没什么可研究的，只是我自己平时的积累，而且后续会持续往里面加内容，不依赖其他类库。",
 			"下载：<a href='https://github.com/yuminjustin/jfaver' target='_blank'>去Github下载</a>",
 			"<p class='arcPara'>2015-4-29第一版</p>",
