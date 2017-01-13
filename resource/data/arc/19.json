@@ -20,12 +20,13 @@
 			"之前自学过一段时间，但没有实际经验，也的确是有了backbone的基础，再回过头看angular，概念逻辑会清晰很多！",
 			"查看代码：<a href='https://github.com/yuminjustin/Todo-for-angular' target='_blank'>Go！</a>",
 			"<b>4、Todo-for-redux</b>",
-			"好麻烦好麻烦，几乎每个Action都对应一个状态，这让我回想起J2EE的SSH，感觉很糟糕。查看代码：<a href='https://github.com/yuminjustin/Todo-for-redux' target='_blank'>Go！</a>",
+			"好麻烦好麻烦，几乎每个Action都对应一个状态，这让我回想起J2EE的SSH，感觉很糟糕。",
+			"查看代码：<a href='https://github.com/yuminjustin/Todo-for-redux' target='_blank'>Go！</a>",
 			"<b>5、Todo-for-Vue</b>",
 			"Vue可以让你看到Angular和React的影子，但又不是，它继承了后两者的优点，也有自己的一套规则。使用Vue来开发太有意思了，代码非常整洁还支持AMD，相比起其它框架它是如此优雅。",
 			"查看代码：<a href='https://github.com/yuminjustin/Todo-for-Vue' target='_blank'>Go！</a>",
 			"<b>操作方式：添加之后，双击修改，点击checkbox删除；（未做本地存储和筛选功能）</b>",
-			"对于习惯了面向过程的同学，这三款框架不要盲目的盲从，首先要转变思想，实际上backbone就是一个你在转变思想的过渡期很好的老师，毕竟它是最容易上手的。。"
+			"对于习惯了面向过程的同学，这些框架不要盲目的盲从，首先要转变思想，实际上backbone就是一个你在转变思想的过渡期很好的老师，毕竟它是最容易上手的。。"
 		]
 	}
 }
