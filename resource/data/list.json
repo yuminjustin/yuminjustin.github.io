@@ -110,11 +110,11 @@
 			"type": "collection",
 			"description": "下面介绍一些有关标记的例子及解释。 一、meta 标签分两大部分：HTTP 标题信息（http-equiv）和页面描述信息（name）。"
 		},{
-			"img": "http://pic.weifengke.com/attachments/2/2480/6292de03a31340b77b801283720e756a.jpg",
+			"img": "http://static.open-open.com/lib/uploadImg/20120418/20120418225611_54.png",
 			"title": "Todos",
 			"tid": "19",
 			"type": "collection",
-			"description": "基于Mithril、React、Angular、Redux、Vue做的todo实例"
+			"description": "基于Mithril、React、Angular、Redux、Vue、Vuex做的todo实例"
 		}]
 	},
 	"info": "success",
