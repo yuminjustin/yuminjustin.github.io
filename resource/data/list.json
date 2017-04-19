@@ -1,122 +1,128 @@
 {
-	"data": {
-		"total": "19",
-		"list": [{
-			"img": "http://upload.chinaz.com/upimg/allimg/110531/1146590.png",
-			"title": "iframe父、子页面交互",
-			"tid": "01",
-			"type": "collection",
-			"description": "1）在页面中查找 iframe 页面元素：2）在 iframe 中查找父页面元素：3）在 iframe 中调用父页面中定义的方法和变量：...."
-		}, {
-			"img": "http://cimage.tianjimedia.com/uploadImages/2014/183/DU36UXG5H41A.jpg",
-			"title": "屏蔽密码框记住密码的功能",
-			"tid": "02",
-			"type": "collection",
-			"description": "记住用户名和密码，是个非常方便的功能，也是当今社会懒人必备，更是Google的Chromium二次开发的浏览器的标配，但往往会让你的懒惰变成他人的方便。"
-		}, {
-			"img": "http://image.anruan.com/imglist/20160201/2016020131636626129.jpg",
-			"title": "手机浏览器奇葩问题（一）",
-			"tid": "03",
-			"type": "collection",
-			"description": "今天公司的老项目遗留问题交给了我这个新来的，呵呵呵，鸭梨山大啊，看看下图,下面的控制图标在这种巨屏手机上显得巨小"
-		}, {
-			"img": "http://images.cnitblog.com/blog/431064/201403/232235436933509.png",
-			"title": "转：querySelector的使用",
-			"tid": "04",
-			"type": "collection",
-			"description": "简介：HTML5向Web API新引入了document.querySelector以及document.querySelectorAll两个方法用来更方便地从DOM选取元素，功能类似于jQuery的选择器。"
-		}, {
-			"img": "http://assets.jq22.com/plugin/2016-03-22-15-03-58.png",
-			"title": "两款好用的hover插件推荐",
-			"tid": "05",
-			"type": "collection",
-			"description": "推荐一：Hover.css。此css的库包括含了链接、按钮、logo、svg、图标类型的hover效果，而且还提供css、sass和less的源码。"
-		}, {
-			"img": "http://www.52ij.com/uploads/allimg/160222/0009513153-3.jpg",
-			"title": "阻止系统弹出软键盘的方法",
-			"tid": "06",
-			"type": "collection",
-			"description": "在移动开发当中，常常会遇到使用控件输入的时候，虽然HTML5提供了大量的日历、事件、数字的系统级输入控件，但是由于android的碎片化和浏览器市场的分化，风格迥异，往往不能满足开发，特别是微信，巨丑无比！"
-		}, {
-			"img": "http://upload.news.cecb2b.com/2013/0524/1369365592969.jpg",
-			"title": "myNotification H5 桌面通知",
-			"tid": "07",
-			"type": "creation",
-			"description": "H5 桌面通知 notification 小功能,chrome 浏览器支持了桌面通知的功能，这种方式干净整洁，也能引起用户的注意。于是就研究了下...."
-		}, {
-			"img": "http://img1.dowebok.com/118.png",
-			"title": "onepagescroll 整屏滚动",
-			"tid": "08",
-			"type": "creation",
-			"description": "基于jQuery的整屏切换效果，支持chrome，firfox，IE（6-new）"
-		}, {
-			"img": "http://www.sun0769.com/digi/mobile/perchase/201305/W020130523401017660282.jpg",
-			"title": "H5图片上传及翻转",
-			"tid": "09",
-			"type": "creation",
-			"description": "这是一个拍照或者选择图片上传的插件，它会自动判断照片拍摄的设备方向并自动旋转;IE10以下自动绕道（不支持,需要HTML5的特性）"
-		}, {
-			"img": "http://img04.tooopen.com/images/20121201/tooopen_19155414.jpg",
-			"title": "常用方法集合(demo)",
-			"tid": "10",
-			"type": "creation",
-			"description": "把自己常用的一些方法和经验集合起来，自己做了一个小的库，于是起名做：jfaver。"
-		}, {
-			"img": "http://www.bkjia.com/uploads/allimg/150710/163A142V-1.png",
-			"title": "仿APP上拉下拉刷新",
-			"tid": "11",
-			"type": "creation",
-			"description": "模仿APP的效果，顶部上拉，底部下拉刷新。在容器顶部向下拉并释放或在底部向上拉并释放，然后返回回调函数，你想干嘛干嘛，不依赖jq或zp等类库。"
-		}, {
-			"img": "/uploads/481813734.jpg",
-			"title": "触摸+无缝左右滚动焦点图",
-			"tid": "12",
-			"type": "creation",
-			"description": "1、自动左右滚动，可设置;2、触摸拖拽;3、无缝滚动;需要结合我之前做的touch插件，这个小的功能之前就做好了"
-		}, {
-			"img": "/uploads/20141231055421706.png",
-			"title": "datePicker日历选择器(demo)",
-			"tid": "13",
-			"type": "creation",
-			"description": "datePicker 日历选择器，适合手机开发，绿色风格;日期选择器，针对手机而制作，配置简单；"
-		}, {
-			"img": "/uploads/3586630.png",
-			"title": "基于jQuery或Zepto的设备方向事件",
-			"tid": "14",
-			"type": "creation",
-			"description": "这个插件基于JQuery or Zepto，提供移动设备的方向的事件。 一共提供四个事件：vertical、hLeft、hRight、shake"
-		}, {
-			"img": "/uploads/touch.jpg",
-			"title": "基于jQuery或Zepto的touch事件",
-			"tid": "15",
-			"type": "creation",
-			"description": "触摸插件，基于jQuery or Zepto，为移动开发提供最基本的事件, tap、longTap、swipeUp、swipeDown、swipeLeft、swipeRight、swipe、drag几个常规的事件"
-		}, {
-			"img": "http://img.25pp.com/uploadfile/soft/images/2011/1021/20111021032149279.jpg",
-			"title": "JS中的call()和apply()方法",
-			"tid": "16",
-			"type": "collection",
-			"description": "1、方法定义 2、常用实例 这个例子中的意思就是用 add 来替换 sub，add.call(sub,3,1) == add(3,1) ，所以运行结果为：alert(4); "
-		}, {
-			"img": "/uploads/3586630adsfsdg.jpg",
-			"title": "手机拍照方向的问题解决",
-			"tid": "17",
-			"type": "collection",
-			"description": "最近遇到一个棘手的问题——手机上拍照并上传图片，因为拍摄角度问题，图片的显示问题，实际情况如下图所示。"
-		}, {
-			"img": "http://pic.baike.soso.com/p/20140509/20140509165325-1242587410.jpg",
-			"title": "移动平台对 meta 标签的定义",
-			"tid": "18",
-			"type": "collection",
-			"description": "下面介绍一些有关标记的例子及解释。 一、meta 标签分两大部分：HTTP 标题信息（http-equiv）和页面描述信息（name）。"
-		},{
-			"img": "http://static.open-open.com/lib/uploadImg/20120418/20120418225611_54.png",
-			"title": "Todos",
-			"tid": "19",
-			"type": "collection",
-			"description": "基于Mithril、React、Angular、Redux、Vue、Vuex做的todo实例"
-		}]
-	},
-	"info": "success",
-	"status": "success"
-}
+		"data": {
+			"total": "19",
+			"list": [{
+				"img": "http://upload.chinaz.com/upimg/allimg/110531/1146590.png",
+				"title": "iframe父、子页面交互",
+				"tid": "01",
+				"type": "collection",
+				"description": "1）在页面中查找 iframe 页面元素：2）在 iframe 中查找父页面元素：3）在 iframe 中调用父页面中定义的方法和变量：...."
+			}, {
+				"img": "http://cimage.tianjimedia.com/uploadImages/2014/183/DU36UXG5H41A.jpg",
+				"title": "屏蔽密码框记住密码的功能",
+				"tid": "02",
+				"type": "collection",
+				"description": "记住用户名和密码，是个非常方便的功能，也是当今社会懒人必备，更是Google的Chromium二次开发的浏览器的标配，但往往会让你的懒惰变成他人的方便。"
+			}, {
+				"img": "http://image.anruan.com/imglist/20160201/2016020131636626129.jpg",
+				"title": "手机浏览器奇葩问题（一）",
+				"tid": "03",
+				"type": "collection",
+				"description": "今天公司的老项目遗留问题交给了我这个新来的，呵呵呵，鸭梨山大啊，看看下图,下面的控制图标在这种巨屏手机上显得巨小"
+			}, {
+				"img": "http://images.cnitblog.com/blog/431064/201403/232235436933509.png",
+				"title": "转：querySelector的使用",
+				"tid": "04",
+				"type": "collection",
+				"description": "简介：HTML5向Web API新引入了document.querySelector以及document.querySelectorAll两个方法用来更方便地从DOM选取元素，功能类似于jQuery的选择器。"
+			}, {
+				"img": "http://assets.jq22.com/plugin/2016-03-22-15-03-58.png",
+				"title": "两款好用的hover插件推荐",
+				"tid": "05",
+				"type": "collection",
+				"description": "推荐一：Hover.css。此css的库包括含了链接、按钮、logo、svg、图标类型的hover效果，而且还提供css、sass和less的源码。"
+			}, {
+				"img": "http://www.52ij.com/uploads/allimg/160222/0009513153-3.jpg",
+				"title": "阻止系统弹出软键盘的方法",
+				"tid": "06",
+				"type": "collection",
+				"description": "在移动开发当中，常常会遇到使用控件输入的时候，虽然HTML5提供了大量的日历、事件、数字的系统级输入控件，但是由于android的碎片化和浏览器市场的分化，风格迥异，往往不能满足开发，特别是微信，巨丑无比！"
+			}, {
+				"img": "http://upload.news.cecb2b.com/2013/0524/1369365592969.jpg",
+				"title": "myNotification H5 桌面通知",
+				"tid": "07",
+				"type": "creation",
+				"description": "H5 桌面通知 notification 小功能,chrome 浏览器支持了桌面通知的功能，这种方式干净整洁，也能引起用户的注意。于是就研究了下...."
+			}, {
+				"img": "http://img1.dowebok.com/118.png",
+				"title": "onepagescroll 整屏滚动",
+				"tid": "08",
+				"type": "creation",
+				"description": "基于jQuery的整屏切换效果，支持chrome，firfox，IE（6-new）"
+			}, {
+				"img": "http://www.sun0769.com/digi/mobile/perchase/201305/W020130523401017660282.jpg",
+				"title": "H5图片上传及翻转",
+				"tid": "09",
+				"type": "creation",
+				"description": "这是一个拍照或者选择图片上传的插件，它会自动判断照片拍摄的设备方向并自动旋转;IE10以下自动绕道（不支持,需要HTML5的特性）"
+			}, {
+				"img": "http://img04.tooopen.com/images/20121201/tooopen_19155414.jpg",
+				"title": "常用方法集合(demo)",
+				"tid": "10",
+				"type": "creation",
+				"description": "把自己常用的一些方法和经验集合起来，自己做了一个小的库，于是起名做：jfaver。"
+			}, {
+				"img": "http://www.bkjia.com/uploads/allimg/150710/163A142V-1.png",
+				"title": "仿APP上拉下拉刷新",
+				"tid": "11",
+				"type": "creation",
+				"description": "模仿APP的效果，顶部上拉，底部下拉刷新。在容器顶部向下拉并释放或在底部向上拉并释放，然后返回回调函数，你想干嘛干嘛，不依赖jq或zp等类库。"
+			}, {
+				"img": "/uploads/481813734.jpg",
+				"title": "触摸+无缝左右滚动焦点图",
+				"tid": "12",
+				"type": "creation",
+				"description": "1、自动左右滚动，可设置;2、触摸拖拽;3、无缝滚动;需要结合我之前做的touch插件，这个小的功能之前就做好了"
+			}, {
+				"img": "/uploads/20141231055421706.png",
+				"title": "datePicker日历选择器(demo)",
+				"tid": "13",
+				"type": "creation",
+				"description": "datePicker 日历选择器，适合手机开发，绿色风格;日期选择器，针对手机而制作，配置简单；"
+			}, {
+				"img": "/uploads/3586630.png",
+				"title": "基于jQuery或Zepto的设备方向事件",
+				"tid": "14",
+				"type": "creation",
+				"description": "这个插件基于JQuery or Zepto，提供移动设备的方向的事件。 一共提供四个事件：vertical、hLeft、hRight、shake"
+			}, {
+				"img": "/uploads/touch.jpg",
+				"title": "基于jQuery或Zepto的touch事件",
+				"tid": "15",
+				"type": "creation",
+				"description": "触摸插件，基于jQuery or Zepto，为移动开发提供最基本的事件, tap、longTap、swipeUp、swipeDown、swipeLeft、swipeRight、swipe、drag几个常规的事件"
+			}, {
+				"img": "http://img.25pp.com/uploadfile/soft/images/2011/1021/20111021032149279.jpg",
+				"title": "JS中的call()和apply()方法",
+				"tid": "16",
+				"type": "collection",
+				"description": "1、方法定义 2、常用实例 这个例子中的意思就是用 add 来替换 sub，add.call(sub,3,1) == add(3,1) ，所以运行结果为：alert(4); "
+			}, {
+				"img": "/uploads/3586630adsfsdg.jpg",
+				"title": "手机拍照方向的问题解决",
+				"tid": "17",
+				"type": "collection",
+				"description": "最近遇到一个棘手的问题——手机上拍照并上传图片，因为拍摄角度问题，图片的显示问题，实际情况如下图所示。"
+			}, {
+				"img": "http://pic.baike.soso.com/p/20140509/20140509165325-1242587410.jpg",
+				"title": "移动平台对 meta 标签的定义",
+				"tid": "18",
+				"type": "collection",
+				"description": "下面介绍一些有关标记的例子及解释。 一、meta 标签分两大部分：HTTP 标题信息（http-equiv）和页面描述信息（name）。"
+			}, {
+				"img": "http://static.open-open.com/lib/uploadImg/20120418/20120418225611_54.png",
+				"title": "Todos",
+				"tid": "19",
+				"type": "collection",
+				"description": "基于Mithril、React、Angular、Redux、Vue、Vuex做的todo实例"
+			}, {
+				"img": "https://yun.hainei.org/forum/201603/12/183028nhqwyy0q5ti5bs5s.jpeg",
+				"title": "前端面试题",
+				"tid": "20",
+				"type": "collection",
+				"description": "收集一些经典的前端面试题"
+			}]
+		},
+		"info": "success",
+		"status": "success"
+	}
