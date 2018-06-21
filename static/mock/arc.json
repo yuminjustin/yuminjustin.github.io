@@ -1,5 +1,11 @@
 {
     "data": [{
+            "id": 12,
+            "title": "await&async",
+            "img": "",
+            "des": "一个很容易理解的await&async的文章 ",
+            "url": "https://github.com/yuminjustin/jfaver/tree/master/2018/async"
+        },{
             "id": 11,
             "title": "关于PWA",
             "img": "",
