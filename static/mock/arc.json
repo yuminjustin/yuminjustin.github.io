@@ -1,16 +1,10 @@
 {
     "data": [{
-            "id": 12,
-            "title": "await&async",
-            "img": "",
-            "des": "一个很容易理解的await&async的文章 ",
-            "url": "https://github.com/yuminjustin/jfaver/tree/master/2018/async"
-        },{
             "id": 11,
             "title": "关于PWA",
             "img": "",
             "des": "渐进式网络应用。serviceWorker能让前端开发者来控制浏览器来缓存那些文件，拦截进出的 HTTP 请求，从而完全控制你的网站",
-            "url": "https://github.com/yuminjustin/jfaver/tree/master/2018/pwa_demo"
+            "url": "https://github.com/yuminjustin/jfaver/blob/master/2018/pwa.md"
         },
         {
             "id": 10,
